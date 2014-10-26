@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jQuery对象转成DOM对象案例</title>
+    <script type="text/javascript" src="../js/jquery-1.4.2.js">
+
+    </script>
+</head>
+<body>
+<input type="text" value="zhang" id="username" name="username" />
+</body>
+<script type="text/javascript">
+//JQUERY对象转化为DOM对象
+var $inputObj = $("#username");
+//    alert($inputObj.val());
+
+    //转化成DOM对象：方法一
+    var demObj = $inputObj[0];
+    alert(demObj.value);
+
+    //way 2
+    var domObj = $inputObj.get(0);
+    alert(demObj.value);
+
+</script>
+</html>

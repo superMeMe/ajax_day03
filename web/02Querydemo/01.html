@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--使用jQuser说先倒入js框架文件-->
+    <script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+</head>
+<body>
+        <input type="text" value="nicai" id="username" name="username"/>
+</body>
+<script type="text/javascript">
+//    <!--dom输出-->
+
+
+    //使用JQuery输出
+    //jQusery的标记
+    //way 1
+    $(document).ready(function(){       //文档全部加载完毕后执行
+        alert($("#username").val());
+    });
+
+    //way 2
+//$().ready(function(){       //文档全部加载完毕后执行
+//    alert($("#username").val());
+//});
+
+</script>
+</html>
